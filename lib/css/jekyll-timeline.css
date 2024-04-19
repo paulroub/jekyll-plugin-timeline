@@ -1,0 +1,72 @@
+.jekyll-timeline,
+.jekyll-timeline * {
+    box-sizing: border-box;
+}
+
+.jekyll-timeline-event {
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    display: flex;
+}
+
+.jekyll-timeline-event + .jekyll-timeline-event {
+    margin-top: 1rem;
+}
+
+.jekyll-timeline-date,
+.jekyll-timeline-summary {
+    padding: 0.5rem;
+    display: block;
+}
+
+.jekyll-timeline-date {
+    font-weight: bold;
+    margin-right: 1rem;
+    background-color: #333;
+    color: #fff;
+    width: 12rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.jekyll-timeline-details {
+    margin: 0;
+    padding: 1rem 0.5rem;
+}
+
+.jekyll-timeline-details > div {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+.jekyll-timeline-details > div:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+.jekyll-timeline-details > div + div {
+    margin-top: 1rem;
+}
+
+.jekyll-timeline-image-box {
+    flex-shrink: 0;
+    width: 150px;
+    padding: 0;
+    text-align: center;
+}
+
+.jekyll-timeline-image {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.jekyll-timeline-link {
+    margin: 0 0 0.5rem;
+}
+
+.jekyll-timeline-permalink {
+    margin-left: 1rem;
+    color: #f0f0f0;
+}
