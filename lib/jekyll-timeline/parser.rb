@@ -66,7 +66,13 @@ module Jekyll
 
       def get_page(link)
         Jekyll.logger.info "retrieving #{link}"
-        conn = Faraday.new(url: link) do |faraday|
+        options = {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+          },
+          url: link
+        }
+        conn = Faraday.new(options) do |faraday|
           faraday.response :follow_redirects
           faraday.use :cookie_jar
           faraday.adapter Faraday.default_adapter

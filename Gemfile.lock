@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-timeline (0.0.002)
+    jekyll-timeline (0.0.003)
       faraday (~> 2.11.0)
       faraday-cookie_jar (~> 0.0.7)
       faraday-follow_redirects (~> 0.3.0)
