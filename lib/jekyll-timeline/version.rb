@@ -2,6 +2,6 @@
 
 module Jekyll
   module Timeline
-    VERSION = '0.0.002'
+    VERSION = '0.0.003'
   end
 end
